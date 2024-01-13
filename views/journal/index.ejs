@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/journal.css">
+    <title>My Journal</title>
+</head>
+
+<body>
+    <h1>My Journal</h1>
+    <p>
+        My Bible Journal gives you a very private and <b>FREE</b> place to record your
+        favorite scriptures. You can use it as frequently or infrequently as you
+        would like. And - don't forget that it is absolutely <b>FREE</b>!
+    </p>
+    <h2>Here are a few entries to get you started</h2>
+    <div>
+        <ul>
+            <% for(let s of scriptures) { %>
+                <li>
+                    <%= s.scripture %>
+                        <a href="/journal/<%= s.id %>">details</a>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+    <form action="journal/new">
+        <button>New Entries</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: #a2d2ff;
+}
+
+h1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+button {
+    font-size: larger;
+    background-color: #1988e28f;
+    color: #a2d2ff;
+    border: none;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+ul,
+p {
+    font-size: large;
+    inline-size: 30%;
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/journal.css">
+    <title>Edit</title>
+</head>
+
+<body>
+    <h1>Edit</h1>
+    <form method="POST" action="/journal/<%=scripture.id%>?_method=PATCH">
+        <textarea name="scripture" id="" cols="30" rows="10"><%= scripture.scripture %></textarea>
+        <button>Save</button>
+    </form>
+
+</body>
+
+</html>
