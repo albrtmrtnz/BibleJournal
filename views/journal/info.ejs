@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<% layout('layouts/boilerplate') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/journal.css">
-    <title>Info</title>
-</head>
-
-<body>
     <h1>Unique ID - <%= scripture.id %>
     </h1>
     <h2>
@@ -17,8 +8,5 @@
     <a href="/journal">Back to Journal</a>
     <a href="/journal/<%= scripture.id %>/edit">edit</a>
     <form method="POST" action="/journal/<%= scripture.id %>?_method=DELETE">
-        <button>Delete</button>
+        <button class="btn btn-danger btn-sm">Delete</button>
     </form>
-</body>
-
-</html>
